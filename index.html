@@ -6,10 +6,84 @@
   <link rel="stylesheet" href="./assets/style.css">
   <title>Weather Dashboard</title>
 </head>
-<header>
+<body>
+   <!-- Page Header -->
+  <header>
     <h1>Weather Dashboard</h1>
   </header>
-<body>
-  <link rel="stylesheet" href="assets/script.js">
+  <!-- Main Content -->
+  <main class="container">
+    <section class="weather-input">
+      <!-- Weather Input Section -->
+      <h2>Enter a City Name</h2>
+      <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+      <button class="search-btn">Search</button>
+      <div class="separator"></div>
+      <button class="location-btn">Use Current Location</button>
+      <div class="separator"></div>
+      <button class="history-btn">History</button>
+      <ul class="list-group">
+    </section>
+    
+    <!-- Weather Data Section -->
+    <section class="weather-data">
+      <!-- Current Weather Display -->
+      <article class="current-weather">
+        <div class="details">
+          <h2> ()</h2>
+          <p>Temperature: °F</p>
+          <p>Wind: MPH</p>
+          <p>Humidity: %</p>
+        </div>
+        <div class="icon">
+          <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+          <p></p>
+        </div>
+      </article>
+      <!-- 5-Day Forecast Display -->
+      <section class="days-forecast">
+        <h2>5-Day Forecast</h2>
+        <ul class="weather-cards">
+          <li class="card">
+            <h3>()</h3>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <p>Temp: °F</p>
+            <p>Wind: MPH</p>
+            <p>Humidity: %</p>
+          </li>
+          <li class="card">
+            <h3>()</h3>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <p>Temp: °F</p>
+            <p>Wind: MPH</p>
+            <p>Humidity: %</p>
+          </li>
+          <li class="card">
+            <h3>()</h3>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <p>Temp: °F</p>
+            <p>Wind: MPH</p>
+            <p>Humidity: %</p>
+          </li>
+          <li class="card">
+            <h3>()</h3>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <p>Temp: °F</p>
+            <p>Wind: MPH</p>
+            <p>Humidity: %</p>
+          </li>
+          <li class="card">
+            <h3>()</h3>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <p>Temp: °F</p>
+            <p>Wind: MPH</p>
+            <p>Humidity: %</p>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+  <!-- JavaScript -->
+  <script src="./assets/script.js"></script>
 </body>
 </html>
