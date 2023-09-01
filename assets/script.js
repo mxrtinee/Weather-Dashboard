@@ -7,7 +7,7 @@ var getCityCoordinates = () => {
   var cityName = cityInput.value.trim();
   if (!cityName) return;
 
-  var apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
+  var apiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
   fetch(apiUrl)
     .then(res => res.json())
